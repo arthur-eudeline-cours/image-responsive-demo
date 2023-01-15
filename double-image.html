@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Responsive</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script.js" async></script>
+  </head>
+  <body class="bg-gray-900 h-screen flex justify-center overflow-hidden">
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center"
+    >
+      <img
+        class="lg:w-1/2 w-full"
+        src="/1500.png"
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        srcset="
+          /500.png   500w,
+          /750.png   750w,
+          /1000.png 1000w,
+          /1250.png 1250w,
+          /1500.png 1500w
+        "
+      />
+
+
+      <img
+        class="lg:w-1/2 w-full"
+        src="/1500.png"
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        srcset="
+          /500.png   500w,
+          /750.png   750w,
+          /1000.png 1000w,
+          /1250.png 1250w,
+          /1500.png 1500w
+        "
+      />
+    </div>
+
+    <div
+      id="dimensions"
+      class="rounded-2xl fixed bottom-16 left-0 right-0 mx-auto bg-white text-gray-900 font-bold text-3xl px-8 py-4 text-center"
+      style="width: 300px;"
+    ></div>
+  </body>
+</html>
